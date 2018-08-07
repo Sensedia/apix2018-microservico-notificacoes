@@ -153,7 +153,6 @@ public class SolicitacaoPagamentoInput implements Serializable {
 	}
 	
 	public Boolean isValid() {
-		Long count = detalhes.stream().filter(detalhe -> detalhe.getStatus().equals(StatusRetornoEnum.ERROR) || detalhe.getStatus().equals(StatusRetornoEnum.FRAUDE)).count();
-		return count == 0;
+		return this.status.equals(StatusRetornoEnum.SUCESSO);
 	}
 }
