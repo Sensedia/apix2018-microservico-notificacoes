@@ -1,0 +1,8 @@
+metadata:
+  namespace: commons
+  name: ${project.artifactId}
+data:
+  notificacao.host: https://api-apix.sensedia.com/notification/v1/notifications
+  notificacao.client.id: 67558253-50e0-399e-a9ed-5374d8959dfd
+  subscription.name: notificacoes-in
+  topic.out.name: notificacoes-out
