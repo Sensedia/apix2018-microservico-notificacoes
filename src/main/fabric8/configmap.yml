@@ -1,8 +1,8 @@
 metadata:
-  namespace: commons
+  namespace: # setar o namespace do GCP
   name: ${project.artifactId}
 data:
-  notificacao.host: https://api-apix.sensedia.com/notification/v1/notifications
-  notificacao.client.id: 67558253-50e0-399e-a9ed-5374d8959dfd
+  notificacao.host: # setar o endpoint do servico de notificacao
+  notificacao.client.id: # setar o client_id para consumir o servico terceiro de notificacao
   subscription.name: notificacoes-in
   topic.out.name: notificacoes-out
